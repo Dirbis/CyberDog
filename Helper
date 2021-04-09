@@ -8,5 +8,5 @@ $b64 [message to encode] : Encodes a message into base 64. Will delete the users
 $db64 [message to decode] : Decodes a message into base 64. Will delete the users request immedietly and will delete the response after 10 seconds.
 $avatar [user(optional)]:[Title(optional)] : Will retrieve a users PFP (if none is specified, message author will be used) and can add an optional title. EX. $avater johny:Lord of Cheetos
 $[overlay type] [user(optional)]:[Title(optional)] : Overlays an image over a PFP (based off of $avatar). Overlay-types=jail,wasted,glass
-$stupid [user]:[message] : You can find this out on your own
+$stupid [user]:[message:max_length=20] : You can find this out on your own
 

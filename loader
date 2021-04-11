@@ -3,7 +3,7 @@ import subprocess
 import urllib.request
 import base64
 import hashlib
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'cryptography.fernet'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'cryptography'])
 from cryptography.fernet import Fernet
 
 def setkey(key1, key2):

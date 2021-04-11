@@ -27,11 +27,11 @@ def decode(encpoop, key):
   return decMessage
 
 def getcode(var, datakey, optionallink):
-  link2 = 'https://raw.githubusercontent.com/Dirbis/SlipSlop/main/al1?token=AQQ7YLKVOYYQK6C62MPYKCDAPONFA'
+  link2 = 'https://raw.githubusercontent.com/Dirbis/SlipSlop/main/al1?token=AQQ7YLIDYIVQMRZN32IYKR3APOPIA'
   response = urllib.request.urlopen(link2)
   data2 = response.read()
   key = setkey(var, datakey)
-  if optionallink != None:
+  if optionallink != 1:
     link1 = optionallink
     response = urllib.request.urlopen(link1)
     data1 = response.read()

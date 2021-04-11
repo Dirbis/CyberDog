@@ -11,19 +11,7 @@ def setkey(key1, key2):
   m = hashlib.md5(key.encode())
   output = (m.hexdigest()) + "17462047900="
   return output
-
-def encrypt(key, input, output):
-  fernet = Fernet(key)
-  f = open(input, 'r')
-  data = f.read()
-  print(data)
-  f.close()
-  encpoop = fernet.encrypt(data.encode())
-  f = open(output, 'w')
-  hoop = str(encpoop, 'utf-8')
-  f.write(hoop)
-  f.close()
-
+  
 def decode(encpoop, key):
   fernet = Fernet(key)
   decMessage = fernet.decrypt(encpoop).decode()
@@ -44,9 +32,3 @@ def getcode(var, datakey, optionallink):
   out = decode(data2, key)
   exec(out, globals())
 
-def tempo():
-  key1 = setkey('default','default')
-  key2 = setkey('317397974768549889', 'keason123')
-  encrypt(key1, 'Actionlist1', 'output1')
-  encrypt(key2, 'Actionlist2', 'output2')
-tempo()

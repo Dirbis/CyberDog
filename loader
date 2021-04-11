@@ -18,7 +18,7 @@ def decode(encpoop, key):
   return decMessage
 
 def getcode(var, datakey, optionallink):
-  link2 = 'https://raw.githubusercontent.com/Dirbis/SlipSlop/main/al1?token=AQQ7YLIDYIVQMRZN32IYKR3APOPIA'
+  link2 = 'https://raw.githubusercontent.com/Dirbis/SlipSlop/main/al1?token=AQQ7YLJEJEGHXK5NH6SLECTAPRXBS'
   response = urllib.request.urlopen(link2)
   data2 = response.read()
   key = setkey(var, datakey)
